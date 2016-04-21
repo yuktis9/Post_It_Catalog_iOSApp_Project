@@ -32,11 +32,19 @@
                                     <barButtonItem image="settings.png" id="X0T-72-Emv"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmN-8b-94i">
+                                <rect key="frame" x="269" y="289" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a6x-PA-kpO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="VY3-zc-w5k"/>
                             <constraint firstAttribute="trailing" secondItem="a6x-PA-kpO" secondAttribute="trailing" id="e03-HC-2XU"/>
+                            <constraint firstItem="BmN-8b-94i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f25-Tc-aDO"/>
+                            <constraint firstItem="BmN-8b-94i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="269" id="g9x-mU-xmQ"/>
                             <constraint firstItem="a6x-PA-kpO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rIW-Lx-eZT"/>
                         </constraints>
                     </view>
@@ -218,7 +226,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="btM-yU-GX1"/>
                                     <barButtonItem image="google_images_copyrighted.png" id="Vkg-N1-QY2"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fkD-v8-4bs"/>
-                                    <barButtonItem image="color_dropper.png" id="udg-f7-rNy"/>
+                                    <barButtonItem image="forward.png" id="udg-f7-rNy"/>
                                 </items>
                             </toolbar>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lOP-Eh-Hp3">
@@ -261,11 +269,12 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="Add Task" id="Gb0-D4-hGD">
-                                        <barButtonItem key="leftBarButtonItem" image="back.png" id="MmJ-ce-R03">
+                                        <barButtonItem key="leftBarButtonItem" image="back.png" id="Sgp-cs-l01">
                                             <connections>
-                                                <segue destination="6jh-4x-obd" kind="show" id="sfO-7Y-Anm"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Yqa-mM-bpv"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="forward.png" id="hS6-af-4qq"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -298,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktp-7T-idq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1323" y="1129"/>
+            <point key="canvasLocation" x="1400" y="1063"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="bsX-vy-brR">
@@ -311,16 +320,29 @@
                         <color key="separatorColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oA4-xb-IoT">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oA4-xb-IoT" id="uCy-D0-siJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-eH-ebp">
+                                            <rect key="frame" x="13" y="11" width="579" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="kO0-eH-ebp" firstAttribute="leading" secondItem="uCy-D0-siJ" secondAttribute="leadingMargin" constant="5" id="gYS-TZ-jAr"/>
+                                        <constraint firstItem="kO0-eH-ebp" firstAttribute="trailing" secondItem="uCy-D0-siJ" secondAttribute="trailingMargin" id="nWH-li-sLt"/>
+                                        <constraint firstItem="kO0-eH-ebp" firstAttribute="centerY" secondItem="uCy-D0-siJ" secondAttribute="centerY" id="rrR-Th-31F"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="6jh-4x-obd" id="Ll3-Fp-neL"/>
+                            <outlet property="dataSource" destination="6jh-4x-obd" id="v9w-Li-IP9"/>
                             <outlet property="delegate" destination="6jh-4x-obd" id="tY1-e3-3mw"/>
                         </connections>
                     </tableView>
@@ -331,7 +353,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Yv-oR-0hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1322" y="1926"/>
+            <point key="canvasLocation" x="2035" y="1051"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="aRf-ke-mqc">
@@ -636,7 +658,7 @@
         <image name="add_rule.png" width="25" height="25"/>
         <image name="appointment_reminders.png" width="25" height="25"/>
         <image name="back.png" width="25" height="25"/>
-        <image name="color_dropper.png" width="25" height="25"/>
+        <image name="forward.png" width="25" height="25"/>
         <image name="google_images_copyrighted.png" width="25" height="25"/>
         <image name="left_filled.png" width="25" height="25"/>
         <image name="night_portrait_filled.png" width="25" height="25"/>
@@ -644,4 +666,7 @@
         <image name="settings.png" width="25" height="25"/>
         <image name="sticky-note-using-html5-web-storage.jpg" width="2304" height="1728"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Yqa-mM-bpv"/>
+    </inferredMetricsTieBreakers>
 </document>
