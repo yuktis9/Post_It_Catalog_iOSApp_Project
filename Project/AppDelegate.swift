@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import RealmSwift
+
+
+let uiRealm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if(isUserLoggedIn){
         
-        var rootViewController = self.window!.rootViewController
+//        var rootViewController = self.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
