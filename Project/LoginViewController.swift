@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
         
         let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        var rootViewController = appDelegate.window!.rootViewController
+        _ = appDelegate.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         

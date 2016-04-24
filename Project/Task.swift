@@ -15,13 +15,13 @@ class Task: Object {
 //    dynamic var desc = ""
 //    dynamic var date = NSDate()
     
-    dynamic var id = 0
+//    dynamic var id = 0
     dynamic var name = ""
     dynamic var createdAt = NSDate()
     dynamic var notes = ""
     dynamic var isCompleted = false
     
-    override static func primaryKey() -> String? {
-        return "id"
-    }
+//    override static func primaryKey() -> String? {
+//        return "id"
+//    }
 }

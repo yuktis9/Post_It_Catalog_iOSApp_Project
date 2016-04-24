@@ -11,12 +11,12 @@ import RealmSwift
 
 class TaskList: Object{
    
-    dynamic var id = 0
+//    dynamic var id = 0
     dynamic var name = ""
     dynamic var createdAt = NSDate()
     var tasks = List<Task>()
     
-    override static func primaryKey() -> String? {
-        return "id"
-    }
+//    override static func primaryKey() -> String? {
+//        return "id"
+//    }
 }

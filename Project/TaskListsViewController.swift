@@ -19,7 +19,29 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
 
     @IBOutlet weak var taskListsTableView: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        readTasksAndUpdateUI()
+    }
+    
+    func readTasksAndUpdateUI(){
+        
+        lists = uiRealm.objects(TaskList)
+        self.taskListsTableView.setEditing(false, animated: true)
+        self.taskListsTableView.reloadData()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - User Actions -
+    
+
     
     @IBAction func didSelectSortCriteria(sender: AnyObject) {
         if sender.selectedSegmentIndex == 0{
@@ -34,12 +56,12 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         self.taskListsTableView.reloadData()
     }
     
-    func readTasksAndUpdateUI(){
-        
-        lists = uiRealm.objects(TaskList)
-        self.taskListsTableView.setEditing(false, animated: true)
-        self.taskListsTableView.reloadData()
-    }
+   
+    
+    @IBAction func didClickOnEditButton(sender: AnyObject) {
+            isEditingMode = !isEditingMode
+            self.taskListsTableView.setEditing(isEditingMode, animated: true)
+        }
     
     
     @IBAction func didClickOnAddButton(sender: AnyObject) {
@@ -47,7 +69,13 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         displayAlertToAddTaskList(nil)
     }
     
+    //Enable the create action of the alert only if textfield text is not empty
+    func listNameFieldDidChange(textField:UITextField){
+        self.currentCreateAction.enabled = textField.text?.characters.count > 0
+    }
+    
     func displayAlertToAddTaskList(updatedList:TaskList!){
+        
         var title = "New Tasks List"
         var doneTitle = "Create"
         if updatedList != nil{
@@ -62,31 +90,21 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
             
             if updatedList != nil{
                 // update mode
-                do{
-                
-                try uiRealm.write({ () -> Void in
+               try! uiRealm.write({ () -> Void in
                     updatedList.name = listName!
                     self.readTasksAndUpdateUI()
-                })}
-                catch{
-                    print("Error in realm connection!")
-                }
+                })
             }
             else{
                 
                 let newTaskList = TaskList()
                 newTaskList.name = listName!
                 
-                do{
-                    
-                    try uiRealm.write({ () -> Void in
+               try! uiRealm.write({ () -> Void in
                     
                     uiRealm.add(newTaskList)
                     self.readTasksAndUpdateUI()
-                })}
-                catch{
-                    print("Error in realm connection!")
-                }
+                })
             }
             
             
@@ -102,22 +120,17 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Task List Name"
-            textField.addTarget(self, action: #selector(TaskListsViewController.listNameFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
+            textField.addTarget(self, action: "listNameFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
             if updatedList != nil{
                 textField.text = updatedList.name
             }
         }
         
         self.presentViewController(alertController, animated: true, completion: nil)
-    }    //Enable the create action of the alert only if textfield text is not empty
-    func listNameFieldDidChange(textField:UITextField){
-        self.currentCreateAction.enabled = textField.text?.characters.count > 0
-        }
-    
-    @IBAction func didClickOnEditButton(sender: AnyObject) {
-        isEditingMode = !isEditingMode
-        self.taskListsTableView.setEditing(isEditingMode, animated: true)
     }
+    
+    // MARK: - UITableViewDataSource -
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         if let listsTasks = lists{
@@ -126,10 +139,57 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         return 0
     }
     
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("listCell")
+        
+        let list = lists[indexPath.row]
+        
+        cell?.textLabel?.text = list.name
+        cell?.detailTextLabel?.text = "\(list.tasks.count) Tasks"
+        return cell!
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Destructive, title: "Delete") { (deleteAction, indexPath) -> Void in
+            
+            //Deletion will go here
+            
+            let listToBeDeleted = self.lists[indexPath.row]
+            try! uiRealm.write({ () -> Void in
+                uiRealm.delete(listToBeDeleted)
+                self.readTasksAndUpdateUI()
+            })
+        }
+        let editAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "Edit") { (editAction, indexPath) -> Void in
+            
+            // Editing will go here
+            let listToBeUpdated = self.lists[indexPath.row]
+            self.displayAlertToAddTaskList(listToBeUpdated)
+            
+        }
+        return [deleteAction, editAction]
+    }
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("openTasks", sender: self.lists[indexPath.row])
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let tasksViewController = segue.destinationViewController as! TasksViewController
         tasksViewController.selectedList = sender as! TaskList
+    }
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
-}
-

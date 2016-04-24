@@ -263,7 +263,7 @@
                                     <constraint firstAttribute="height" constant="65" id="qN9-6F-oXU"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="Add Task" id="Gb0-D4-hGD">
+                                    <navigationItem title="Task List" id="Gb0-D4-hGD">
                                         <barButtonItem key="leftBarButtonItem" image="back.png" id="Sgp-cs-l01"/>
                                         <barButtonItem key="rightBarButtonItem" image="forward.png" id="hS6-af-4qq"/>
                                     </navigationItem>
@@ -309,7 +309,7 @@
             </objects>
             <point key="canvasLocation" x="1382" y="1129"/>
         </scene>
-        <!--Title-->
+        <!--Task View-->
         <scene sceneID="snS-UR-Xod">
             <objects>
                 <viewController id="DGW-eW-CLO" customClass="TaskListsViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -376,15 +376,15 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="daz-Uh-w54">
+                    <navigationItem key="navigationItem" title="Task View" id="daz-Uh-w54">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="KvS-MV-0Hb">
                             <connections>
-                                <action selector="didClickOnEditButton:" destination="DGW-eW-CLO" id="QuK-X8-9dJ"/>
+                                <action selector="didClickOnEditButton:" destination="DGW-eW-CLO" id="vbG-0z-pfJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="IhV-3L-827">
                             <connections>
-                                <action selector="didClickOnAddButton:" destination="DGW-eW-CLO" id="Imw-hT-JBu"/>
+                                <action selector="didClickOnAddButton:" destination="DGW-eW-CLO" id="E1D-jN-O3N"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -398,7 +398,7 @@
             </objects>
             <point key="canvasLocation" x="2001" y="1129"/>
         </scene>
-        <!--Title-->
+        <!--Added Task-->
         <scene sceneID="2fS-sg-buL">
             <objects>
                 <viewController storyboardIdentifier="TableViewController" id="9eq-sf-Sf7" customClass="TasksViewController" customModule="Project" customModuleProvider="target" sceneMemberID="viewController">
@@ -440,7 +440,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="GEx-98-YIH">
+                    <navigationItem key="navigationItem" title="Added Task" id="GEx-98-YIH">
                         <rightBarButtonItems>
                             <barButtonItem title="Add" id="cz1-BK-2tQ">
                                 <connections>
