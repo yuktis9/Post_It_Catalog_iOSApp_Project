@@ -391,7 +391,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="taskListsTableView" destination="7gI-UI-iJX" id="yWX-4j-7zN"/>
-                        <segue destination="9eq-sf-Sf7" kind="show" id="bN1-uY-2oZ"/>
+                        <segue destination="9eq-sf-Sf7" kind="show" identifier="openTasks" id="bN1-uY-2oZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8li-t9-qC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -410,19 +410,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-Ht-3CI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-Ht-3CI">
                                 <rect key="frame" x="0.0" y="64" width="600" height="535"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="cell" textLabel="Xgl-Jx-arR" style="IBUITableViewCellStyleDefault" id="hwB-cl-Mj1">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="cell" textLabel="Xgl-Jx-arR" rowHeight="54" style="IBUITableViewCellStyleDefault" id="hwB-cl-Mj1">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hwB-cl-Mj1" id="tKQ-Hn-JMT">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="53"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xgl-Jx-arR">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="53"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -439,10 +439,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N8A-Ht-3CI" secondAttribute="trailing" id="19F-Ok-1RV"/>
+                            <constraint firstItem="N8A-Ht-3CI" firstAttribute="top" secondItem="iXL-jq-CGr" secondAttribute="bottom" id="RwT-3G-Fwn"/>
+                            <constraint firstItem="N8A-Ht-3CI" firstAttribute="leading" secondItem="BTN-bn-A8M" secondAttribute="leading" id="Vtf-bu-l3a"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="N8A-Ht-3CI" secondAttribute="bottom" constant="1" id="XGr-GM-QPM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Added Task" id="GEx-98-YIH">
                         <rightBarButtonItems>
-                            <barButtonItem title="Add" id="cz1-BK-2tQ">
+                            <barButtonItem image="plus.png" id="cz1-BK-2tQ">
                                 <connections>
                                     <action selector="didClickOnNewTask:" destination="9eq-sf-Sf7" id="EQx-Zc-cP9"/>
                                 </connections>
@@ -769,6 +775,7 @@
         <image name="google_images_copyrighted.png" width="25" height="25"/>
         <image name="left_filled.png" width="25" height="25"/>
         <image name="night_portrait_filled.png" width="25" height="25"/>
+        <image name="plus.png" width="25" height="25"/>
         <image name="right_filled.png" width="25" height="25"/>
         <image name="settings.png" width="25" height="25"/>
         <image name="sticky-note-using-html5-web-storage.jpg" width="2304" height="1728"/>
