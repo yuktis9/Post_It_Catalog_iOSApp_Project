@@ -8,10 +8,41 @@
 
 import UIKit
 
-class LeftSideViewController: UIViewController,UITableViewDataSource, UITableViewDelegate{
+class LeftSideViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
+    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var imageUploadProgressView: UIProgressView!
+    @IBOutlet weak var progressLabel: UILabel!
+    
     var menuItems:[String] = ["Main","About", "Logout"];
     
+    @IBAction func uploadButtonTapped(sender: AnyObject) {
+        
+        let myPickerController = UIImagePickerController()
+        myPickerController.delegate = self;
+        myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        self.presentViewController(myPickerController, animated: true, completion: nil)
+        let documentsPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsPath = documentsPaths.first
+        
+        
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        print("image selected from the lib")
+        self.dismissViewControllerAnimated(true, completion: nil)
+        myImageView.image = image
+    }
+    
+   
+//        
+//    myImageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        myImageView.backgroundColor = UIColor.clearColor()
+//        self.dismissViewControllerAnimated(true, completion: nil)
+//        
+//        uploadImage()
+//    }
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -52,7 +83,7 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
             let centerNavController = UINavigationController(rootViewController: centerViewController)
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//            print(appDelegate.centerContainer)
+//           print(appDelegate.centerContainer)
             appDelegate.centerContainer!.centerViewController = centerNavController
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             

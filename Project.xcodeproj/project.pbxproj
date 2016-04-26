@@ -14,6 +14,9 @@
 		091DA6F01CC9CEAE00314406 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 091DA6EF1CC9CEAE00314406 /* plus.png */; };
 		091DA6F21CC9DA7A00314406 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DA6F11CC9DA7A00314406 /* TasksViewController.swift */; };
 		091DA6F41CC9DD5500314406 /* TaskListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091DA6F31CC9DD5500314406 /* TaskListsViewController.swift */; };
+		092AC2AB1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 092AC2AA1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg */; };
+		092C067D1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 092C067C1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg */; };
+		092C067F1CCD364B00DB2EB6 /* ryX6nNE.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 092C067E1CCD364B00DB2EB6 /* ryX6nNE.jpg */; };
 		092C975A1CC48266002B9F73 /* NotesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092C97591CC48266002B9F73 /* NotesCollectionViewController.swift */; };
 		092C975C1CC4975E002B9F73 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 092C975B1CC4975E002B9F73 /* settings.png */; };
 		092C975E1CC49794002B9F73 /* add_rule.png in Resources */ = {isa = PBXBuildFile; fileRef = 092C975D1CC49794002B9F73 /* add_rule.png */; };
@@ -43,7 +46,6 @@
 		09A2A4C61CC1B34200A8F9CB /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4C51CC1B34200A8F9CB /* MyCustomTableViewCell.swift */; };
 		09A2A4CA1CC1BE1E00A8F9CB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4C91CC1BE1D00A8F9CB /* AboutViewController.swift */; };
 		09A2A4CC1CC1C32B00A8F9CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4CB1CC1C32B00A8F9CB /* LoginViewController.swift */; };
-		09B840B71CC56D1100FFA9F5 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B840B61CC56D1100FFA9F5 /* AddTaskViewController.swift */; };
 		3ACA6905B8AEEC80926D2745 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B761B36C0EC3C323F59ACB /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,9 @@
 		091DA6EF1CC9CEAE00314406 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		091DA6F11CC9DA7A00314406 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		091DA6F31CC9DD5500314406 /* TaskListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListsViewController.swift; sourceTree = "<group>"; };
+		092AC2AA1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg"; sourceTree = "<group>"; };
+		092C067C1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hawaii-Beach-Wallpaper-HD.jpg"; sourceTree = "<group>"; };
+		092C067E1CCD364B00DB2EB6 /* ryX6nNE.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ryX6nNE.jpg; sourceTree = "<group>"; };
 		092C97591CC48266002B9F73 /* NotesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewController.swift; sourceTree = "<group>"; };
 		092C975B1CC4975E002B9F73 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		092C975D1CC49794002B9F73 /* add_rule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_rule.png; sourceTree = "<group>"; };
@@ -92,7 +97,6 @@
 		09A2A4C51CC1B34200A8F9CB /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
 		09A2A4C91CC1BE1D00A8F9CB /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = ../AboutViewController.swift; sourceTree = "<group>"; };
 		09A2A4CB1CC1C32B00A8F9CB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		09B840B61CC56D1100FFA9F5 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		16B761B36C0EC3C323F59ACB /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E64B55706C0E0C55253CF9 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8985A4CAE13004C3C19C33 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 			name = "Bridging Files";
 			sourceTree = "<group>";
 		};
+		096F492E1CCC954500E6955B /* Realm Database */ = {
+			isa = PBXGroup;
+			children = (
+				091DA6EB1CC9BA5800314406 /* Task.swift */,
+				091DA6ED1CC9C87900314406 /* TaskList.swift */,
+			);
+			name = "Realm Database";
+			sourceTree = "<group>";
+		};
 		09A2A4851CC1A55C00A8F9CB = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +161,8 @@
 		09A2A4901CC1A55C00A8F9CB /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				09A2A4951CC1A55C00A8F9CB /* Main.storyboard */,
 				09A2A49D1CC1A55D00A8F9CB /* LaunchScreen.storyboard */,
+				09A2A4951CC1A55C00A8F9CB /* Main.storyboard */,
 				09A2A4911CC1A55C00A8F9CB /* AppDelegate.swift */,
 				09A2A4931CC1A55C00A8F9CB /* ViewController.swift */,
 				09A2A4C11CC1AFAC00A8F9CB /* ToDoItem.swift */,
@@ -160,16 +173,14 @@
 				09A2A4CB1CC1C32B00A8F9CB /* LoginViewController.swift */,
 				0903DFC51CC307D10026BB8A /* RegisterViewController.swift */,
 				092C97591CC48266002B9F73 /* NotesCollectionViewController.swift */,
-				09B840B61CC56D1100FFA9F5 /* AddTaskViewController.swift */,
-				09A2A4A01CC1A55D00A8F9CB /* Info.plist */,
-				09A2A4981CC1A55C00A8F9CB /* Project.xcdatamodeld */,
-				091DA6ED1CC9C87900314406 /* TaskList.swift */,
-				091DA6EB1CC9BA5800314406 /* Task.swift */,
-				09A2A49B1CC1A55D00A8F9CB /* Assets.xcassets */,
-				092C97581CC45BF0002B9F73 /* Bridging Files */,
-				09A2A4A61CC1A69A00A8F9CB /* Images */,
 				091DA6F11CC9DA7A00314406 /* TasksViewController.swift */,
 				091DA6F31CC9DD5500314406 /* TaskListsViewController.swift */,
+				09A2A4A01CC1A55D00A8F9CB /* Info.plist */,
+				09A2A4981CC1A55C00A8F9CB /* Project.xcdatamodeld */,
+				09A2A49B1CC1A55D00A8F9CB /* Assets.xcassets */,
+				096F492E1CCC954500E6955B /* Realm Database */,
+				092C97581CC45BF0002B9F73 /* Bridging Files */,
+				09A2A4A61CC1A69A00A8F9CB /* Images */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -177,6 +188,9 @@
 		09A2A4A61CC1A69A00A8F9CB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				092AC2AA1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg */,
+				092C067C1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg */,
+				092C067E1CCD364B00DB2EB6 /* ryX6nNE.jpg */,
 				091DA6EF1CC9CEAE00314406 /* plus.png */,
 				099DDDEA1CC6E4160068D79C /* forward.png */,
 				092C97651CC49BB0002B9F73 /* back.png */,
@@ -284,12 +298,15 @@
 				09A2A4AA1CC1A6C200A8F9CB /* menu_filled.png in Resources */,
 				09A2A4AE1CC1A6EE00A8F9CB /* left_filled.png in Resources */,
 				0903DFC81CC319890026BB8A /* sticky-note-using-html5-web-storage.jpg in Resources */,
+				092C067F1CCD364B00DB2EB6 /* ryX6nNE.jpg in Resources */,
 				092C97641CC49A6D002B9F73 /* color_dropper.png in Resources */,
+				092C067D1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg in Resources */,
 				092C97601CC49A3F002B9F73 /* appointment_reminders.png in Resources */,
 				092C975C1CC4975E002B9F73 /* settings.png in Resources */,
 				092C97661CC49BB0002B9F73 /* back.png in Resources */,
 				09A2A49C1CC1A55D00A8F9CB /* Assets.xcassets in Resources */,
 				09A2A4AC1CC1A6E700A8F9CB /* right_filled.png in Resources */,
+				092AC2AB1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg in Resources */,
 				09A2A4971CC1A55C00A8F9CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				09A2A4CC1CC1C32B00A8F9CB /* LoginViewController.swift in Sources */,
-				09B840B71CC56D1100FFA9F5 /* AddTaskViewController.swift in Sources */,
 				09A2A4941CC1A55C00A8F9CB /* ViewController.swift in Sources */,
 				092C975A1CC48266002B9F73 /* NotesCollectionViewController.swift in Sources */,
 				09A2A4BD1CC1A90900A8F9CB /* MMDrawerBarButtonItem.m in Sources */,
