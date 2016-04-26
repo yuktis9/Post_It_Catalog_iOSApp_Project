@@ -10,11 +10,13 @@ import UIKit
 
 class RegisterViewController: UIViewController, UINavigationControllerDelegate  {
 
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var userEmailTextField: UITextField!
-    @IBOutlet weak var userPasswordTextField: UITextField!
-    @IBOutlet weak var userRepeatPasswordTextField: UITextField!
-    @IBOutlet weak var userFirstNameTextField: UITextField!
     @IBOutlet weak var userLastNameTextField: UITextField!
+    @IBOutlet weak var userFirstNameTextField: UITextField!
+    @IBOutlet weak var userRepeatPasswordTextField: UITextField!
+    @IBOutlet weak var userPasswordTextField: UITextField!
+
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
         
@@ -34,13 +36,6 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
             return;
             
         }
-        //
-        //        let profileImageData = UIImageJPEGRepresentation(profilePhotoImageView.image!, 1)
-        //
-        //        if(profileImageData != nil){
-        //            let profileImageFile =  PFFile(data: profileImageData)
-        //            myUser.setObject(profileImageFile, valueForKey("profile picture"))
-        //        }
         
         //Checks if passwords match
         if (userPassword != userRepeatPassword)
@@ -83,6 +78,10 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        scrollView.contentSize.height = 1000
+        scrollView.contentSize.width = 1000
+        
     }
 
     override func didReceiveMemoryWarning() {

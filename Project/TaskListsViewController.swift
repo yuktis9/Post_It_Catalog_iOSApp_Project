@@ -120,7 +120,7 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Task List Name"
-            textField.addTarget(self, action: "listNameFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+            textField.addTarget(self, action: #selector(TaskListsViewController.listNameFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
             if updatedList != nil{
                 textField.text = updatedList.name
             }
