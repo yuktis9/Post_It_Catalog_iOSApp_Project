@@ -181,15 +181,15 @@
 				092C97591CC48266002B9F73 /* NotesCollectionViewController.swift */,
 				091DA6F11CC9DA7A00314406 /* TasksViewController.swift */,
 				091DA6F31CC9DD5500314406 /* TaskListsViewController.swift */,
+				09339A161CD70AAC00E42248 /* MyReminderViewController.swift */,
+				09339A181CD70C2000E42248 /* ReminderDetails.swift */,
+				09339A1A1CD70C6600E42248 /* NewReminder.swift */,
 				09A2A4A01CC1A55D00A8F9CB /* Info.plist */,
 				09A2A4981CC1A55C00A8F9CB /* Project.xcdatamodeld */,
 				09A2A49B1CC1A55D00A8F9CB /* Assets.xcassets */,
 				096F492E1CCC954500E6955B /* Realm Database */,
 				092C97581CC45BF0002B9F73 /* Bridging Files */,
 				09A2A4A61CC1A69A00A8F9CB /* Images */,
-				09339A161CD70AAC00E42248 /* MyReminderViewController.swift */,
-				09339A181CD70C2000E42248 /* ReminderDetails.swift */,
-				09339A1A1CD70C6600E42248 /* NewReminder.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
