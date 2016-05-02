@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if(isUserLoggedIn){
         
-//        var rootViewController = self.window!.rootViewController
+        var rootViewController = self.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
@@ -47,10 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let centerNav = UINavigationController(rootViewController: centerViewController)
         let rightNav = UINavigationController(rootViewController: rightViewController)
         
-        let centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav,rightDrawerViewController:rightNav)
+         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav,rightDrawerViewController:rightNav)
         
-        centerContainer.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
-        centerContainer.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.PanningCenterView;
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.PanningCenterView;
         
 //      NSUserDefaults.standardUserDefaults().synchronize()
         

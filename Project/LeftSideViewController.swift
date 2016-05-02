@@ -12,8 +12,10 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
 
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var myImageView: UIImageView!
-    @IBOutlet weak var imageUploadProgressView: UIProgressView!
-    @IBOutlet weak var progressLabel: UILabel!
+   // @IBOutlet weak var imageUploadProgressView: UIProgressView!
+//    @IBOutlet weak var progressLabel: UILabel!
+    
+  //  @IBOutlet weak var scrollView: UIScrollView!
     
     var menuItems:[String] = ["Main","About", "Logout"];
     
@@ -23,9 +25,9 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
         myPickerController.delegate = self;
         myPickerController.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
         self.presentViewController(myPickerController, animated: true, completion: nil)
-        let documentsPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-        let documentsPath = documentsPaths.first
-        
+//        let documentsPaths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+//        let documentsPath = documentsPaths.first
+//        
         
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
@@ -59,11 +61,11 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
         
     {
-        let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) 
+//        let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) 
     
-//    var mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomTableViewCell
+    let mycell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as! MyCustomTableViewCell
     
-        mycell.textLabel!.text = menuItems[indexPath.row]
+        mycell.menuItemLabel.text = menuItems[indexPath.row]
         
         
         return mycell;
@@ -83,7 +85,7 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
             let centerNavController = UINavigationController(rootViewController: centerViewController)
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-//           print(appDelegate.centerContainer)
+            
             appDelegate.centerContainer!.centerViewController = centerNavController
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
@@ -97,8 +99,6 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
-//            appDelegate.window?.rootViewController = aboutNavController
-            
             appDelegate.centerContainer!.centerViewController = aboutNavController
             appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
             
@@ -110,7 +110,6 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
             NSUserDefaults.standardUserDefaults().synchronize()
             
             let loginViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LoginViewController") as! LoginViewController
-            
             
             let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             
@@ -137,6 +136,7 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+  
     }
     
     override func didReceiveMemoryWarning() {

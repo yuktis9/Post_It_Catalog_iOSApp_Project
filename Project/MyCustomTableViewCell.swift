@@ -11,6 +11,7 @@ import UIKit
 class MyCustomTableViewCell: UITableViewCell{
 
     
+    @IBOutlet weak var menuItemLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

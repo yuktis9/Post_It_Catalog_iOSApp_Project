@@ -17,6 +17,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var completedTasks : Results<Task>!
     var currentCreateAction:UIAlertAction!
     
+   // @IBOutlet weak var scrollView: UIScrollView!
     var isEditingMode = false
     
     // Get the default Realm
@@ -34,6 +35,9 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         self.title = selectedList.name
         readTasksAndUpateUI()
+        
+        //scrollView.contentSize.height = 1000
+        //scrollView.contentSize.width = 1000
     }
 
     

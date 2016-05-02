@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class LoginViewController: UIViewController {
 
@@ -35,7 +36,7 @@ class LoginViewController: UIViewController {
         
         let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        _ = appDelegate.window!.rootViewController
+        var rootViewController = appDelegate.window!.rootViewController
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         

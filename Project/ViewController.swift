@@ -8,10 +8,12 @@
 
 import UIKit
 
-//var toDoList = [String]()
+var toDoList = [String]()
 
 class ViewController: UIViewController, UITableViewDelegate {
 
+   // var manager: OneShotLocationManager?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,8 +27,9 @@ class ViewController: UIViewController, UITableViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
 //        tableView.reloadData()
+//        super.viewDidAppear(animated)
+        
     }
-
 
 
     @IBAction func leftSideButtonTapped(sender: AnyObject) {
