@@ -24,6 +24,9 @@
 		092C97621CC49A53002B9F73 /* google_images_copyrighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 092C97611CC49A53002B9F73 /* google_images_copyrighted.png */; };
 		092C97641CC49A6D002B9F73 /* color_dropper.png in Resources */ = {isa = PBXBuildFile; fileRef = 092C97631CC49A6D002B9F73 /* color_dropper.png */; };
 		092C97661CC49BB0002B9F73 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 092C97651CC49BB0002B9F73 /* back.png */; };
+		09339A171CD70AAC00E42248 /* MyReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09339A161CD70AAC00E42248 /* MyReminderViewController.swift */; };
+		09339A191CD70C2000E42248 /* ReminderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09339A181CD70C2000E42248 /* ReminderDetails.swift */; };
+		09339A1B1CD70C6600E42248 /* NewReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09339A1A1CD70C6600E42248 /* NewReminder.swift */; };
 		099DDDEB1CC6E4160068D79C /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 099DDDEA1CC6E4160068D79C /* forward.png */; };
 		09A2A4921CC1A55C00A8F9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4911CC1A55C00A8F9CB /* AppDelegate.swift */; };
 		09A2A4941CC1A55C00A8F9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4931CC1A55C00A8F9CB /* ViewController.swift */; };
@@ -67,6 +70,9 @@
 		092C97611CC49A53002B9F73 /* google_images_copyrighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google_images_copyrighted.png; sourceTree = "<group>"; };
 		092C97631CC49A6D002B9F73 /* color_dropper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color_dropper.png; sourceTree = "<group>"; };
 		092C97651CC49BB0002B9F73 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		09339A161CD70AAC00E42248 /* MyReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyReminderViewController.swift; sourceTree = "<group>"; };
+		09339A181CD70C2000E42248 /* ReminderDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderDetails.swift; sourceTree = "<group>"; };
+		09339A1A1CD70C6600E42248 /* NewReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReminder.swift; sourceTree = "<group>"; };
 		099DDDEA1CC6E4160068D79C /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		09A2A48E1CC1A55C00A8F9CB /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A2A4911CC1A55C00A8F9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 				096F492E1CCC954500E6955B /* Realm Database */,
 				092C97581CC45BF0002B9F73 /* Bridging Files */,
 				09A2A4A61CC1A69A00A8F9CB /* Images */,
+				09339A161CD70AAC00E42248 /* MyReminderViewController.swift */,
+				09339A181CD70C2000E42248 /* ReminderDetails.swift */,
+				09339A1A1CD70C6600E42248 /* NewReminder.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -368,8 +377,11 @@
 			files = (
 				09A2A4CC1CC1C32B00A8F9CB /* LoginViewController.swift in Sources */,
 				09A2A4941CC1A55C00A8F9CB /* ViewController.swift in Sources */,
+				09339A1B1CD70C6600E42248 /* NewReminder.swift in Sources */,
 				092C975A1CC48266002B9F73 /* NotesCollectionViewController.swift in Sources */,
 				09A2A4BD1CC1A90900A8F9CB /* MMDrawerBarButtonItem.m in Sources */,
+				09339A191CD70C2000E42248 /* ReminderDetails.swift in Sources */,
+				09339A171CD70AAC00E42248 /* MyReminderViewController.swift in Sources */,
 				09A2A4C21CC1AFAC00A8F9CB /* ToDoItem.swift in Sources */,
 				09A2A4BE1CC1A90900A8F9CB /* MMDrawerController.m in Sources */,
 				09A2A49A1CC1A55C00A8F9CB /* Project.xcdatamodeld in Sources */,

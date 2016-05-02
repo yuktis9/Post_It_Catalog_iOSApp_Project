@@ -138,7 +138,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         alertController.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Task Name"
-            textField.addTarget(self, action: "taskNameFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
+            textField.addTarget(self, action: #selector(TasksViewController.taskNameFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
             if updatedTask != nil{
                 textField.text = updatedTask.name
             }
