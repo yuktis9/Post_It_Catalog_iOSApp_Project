@@ -143,9 +143,8 @@
                                     <action selector="uploadButtonTapped:" destination="AQh-c9-yaO" eventType="touchUpInside" id="tFY-6S-ghC"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-yi-frJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night_portrait_filled.png" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-yi-frJ">
                                 <rect key="frame" x="212" y="33" width="177" height="149"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="177" id="jVm-83-7gZ"/>
                                     <constraint firstAttribute="height" constant="149" id="nyb-8R-mK8"/>
@@ -355,11 +354,7 @@
                                                 <action selector="editTable:" destination="pVZ-rL-4g4" id="AKz-Kz-m8l"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="zDa-2n-PTV">
-                                            <connections>
-                                                <segue destination="9hr-Qn-v3w" kind="presentation" identifier="NewReminder" id="CoB-Pm-0O6"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="zDa-2n-PTV"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -416,7 +411,18 @@
                         </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="W9a-ez-K5A"/>
+                    <navigationItem key="navigationItem" id="W9a-ez-K5A">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="edit" id="jIe-OG-gde">
+                            <connections>
+                                <action selector="editTable:" destination="pVZ-rL-4g4" id="Qs2-Cs-4rA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qaD-lT-Wgl">
+                            <connections>
+                                <segue destination="9hr-Qn-v3w" kind="presentation" identifier="NewReminder" id="R6p-B8-E7q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="Qez-nu-8Sd" id="Ee8-mE-00S"/>
@@ -593,7 +599,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSm-p0-bok" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3429" y="1180"/>
+            <point key="canvasLocation" x="3344" y="1180"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="aRf-ke-mqc">
@@ -899,6 +905,7 @@
     </scenes>
     <resources>
         <image name="add_rule.png" width="25" height="25"/>
+        <image name="night_portrait_filled.png" width="25" height="25"/>
         <image name="plus.png" width="25" height="25"/>
         <image name="settings.png" width="25" height="25"/>
     </resources>

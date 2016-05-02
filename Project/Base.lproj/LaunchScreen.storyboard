@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,54 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="url.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YAr-7G-4Wv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YAr-7G-4Wv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post-It Catalog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4O-di-wft">
-                                <rect key="frame" x="181" y="75" width="239" height="50"/>
+                                <rect key="frame" x="181" y="166" width="239" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="239" id="x0z-tK-Ggr"/>
-                                    <constraint firstAttribute="height" constant="50" id="yO0-yi-sLM"/>
+                                    <constraint firstAttribute="height" constant="50" id="42h-ZI-OYw"/>
+                                    <constraint firstAttribute="width" constant="239" id="84g-9y-Uux"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Task Manager " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp9-K1-bPM">
-                                <rect key="frame" x="225" y="133" width="164" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Yukti Sarwadia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-Fs-y72">
+                                <rect key="frame" x="232" y="408" width="137" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="164" id="IUm-wG-1XT"/>
+                                    <constraint firstAttribute="width" constant="137" id="IXy-la-Wv1"/>
+                                    <constraint firstAttribute="height" constant="27" id="oI3-de-35o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Yukti Sarwadia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxC-Fs-y72">
-                                <rect key="frame" x="239" y="214" width="137" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Task Manager " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vp9-K1-bPM">
+                                <rect key="frame" x="218" y="224" width="164" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="eR7-C3-SHT"/>
+                                    <constraint firstAttribute="height" constant="31" id="9Xc-0Z-rjk"/>
+                                    <constraint firstAttribute="width" constant="164" id="nIH-E4-bIZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="B4O-di-wft" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0AY-vt-nDu"/>
-                            <constraint firstItem="Vp9-K1-bPM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="7.5" id="3Sn-Bn-KUk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YAr-7G-4Wv" secondAttribute="trailing" constant="-20" id="5KE-FO-81y"/>
-                            <constraint firstItem="B4O-di-wft" firstAttribute="centerX" secondItem="YAr-7G-4Wv" secondAttribute="centerX" id="5QR-3w-wvP"/>
-                            <constraint firstItem="B4O-di-wft" firstAttribute="height" secondItem="Vp9-K1-bPM" secondAttribute="height" constant="19" id="7dj-pJ-i1g"/>
-                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="91L-Qr-DMO"/>
-                            <constraint firstItem="Vp9-K1-bPM" firstAttribute="top" secondItem="B4O-di-wft" secondAttribute="bottom" constant="8" id="EjI-am-bI9"/>
-                            <constraint firstItem="UxC-Fs-y72" firstAttribute="centerX" secondItem="Vp9-K1-bPM" secondAttribute="centerX" id="HVX-If-PPj"/>
-                            <constraint firstItem="Vp9-K1-bPM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="225" id="MKe-L7-2UM"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YAr-7G-4Wv" secondAttribute="bottom" id="Mv9-9R-Z55"/>
-                            <constraint firstItem="UxC-Fs-y72" firstAttribute="top" secondItem="Vp9-K1-bPM" secondAttribute="bottom" constant="50" id="cvm-u4-JlH"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="UxC-Fs-y72" secondAttribute="bottom" constant="359" id="moR-kr-r4d"/>
-                            <constraint firstItem="Vp9-K1-bPM" firstAttribute="height" secondItem="UxC-Fs-y72" secondAttribute="height" constant="4" id="qjz-5u-3gb"/>
-                            <constraint firstItem="B4O-di-wft" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="55" id="wA0-Ry-qZ9"/>
-                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="yNf-E6-w7W"/>
+                            <constraint firstItem="UxC-Fs-y72" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0rY-Q6-b01"/>
+                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="29A-vn-7SU"/>
+                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3rE-Ul-oGa"/>
+                            <constraint firstItem="Vp9-K1-bPM" firstAttribute="top" secondItem="B4O-di-wft" secondAttribute="bottom" constant="8" symbolic="YES" id="O9C-FD-YwR"/>
+                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="V5v-nY-nlJ"/>
+                            <constraint firstAttribute="trailing" secondItem="YAr-7G-4Wv" secondAttribute="trailing" id="ZqQ-Bd-Bi1"/>
+                            <constraint firstItem="UxC-Fs-y72" firstAttribute="top" secondItem="Vp9-K1-bPM" secondAttribute="bottom" constant="153" id="aLV-Fa-3yX"/>
+                            <constraint firstItem="B4O-di-wft" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="146" id="f5y-mR-XVd"/>
+                            <constraint firstItem="B4O-di-wft" firstAttribute="centerX" secondItem="Vp9-K1-bPM" secondAttribute="centerX" id="wxO-n4-g86"/>
+                            <constraint firstItem="YAr-7G-4Wv" firstAttribute="centerX" secondItem="B4O-di-wft" secondAttribute="centerX" id="zoY-DO-dgi"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -75,6 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="url.jpg" width="300" height="168"/>
+        <image name="main_background.jpg" width="322" height="190"/>
     </resources>
 </document>
