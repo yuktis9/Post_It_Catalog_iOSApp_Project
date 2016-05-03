@@ -51,7 +51,6 @@
 		09A2A4CC1CC1C32B00A8F9CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4CB1CC1C32B00A8F9CB /* LoginViewController.swift */; };
 		09F180E41CD7FB9300050410 /* main_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F180E31CD7FB9300050410 /* main_background.jpg */; };
 		09F180E61CD8045400050410 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F180E51CD8045400050410 /* UserDetails.swift */; };
-		09F528BD1CD7C60100232ADB /* OneShotLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F528BC1CD7C60100232ADB /* OneShotLocationManager.swift */; };
 		3ACA6905B8AEEC80926D2745 /* Pods_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B761B36C0EC3C323F59ACB /* Pods_Project.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +107,6 @@
 		09A2A4CB1CC1C32B00A8F9CB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		09F180E31CD7FB9300050410 /* main_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_background.jpg; sourceTree = "<group>"; };
 		09F180E51CD8045400050410 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
-		09F528BC1CD7C60100232ADB /* OneShotLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneShotLocationManager.swift; sourceTree = "<group>"; };
 		16B761B36C0EC3C323F59ACB /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E64B55706C0E0C55253CF9 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8985A4CAE13004C3C19C33 /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 				09339A161CD70AAC00E42248 /* MyReminderViewController.swift */,
 				09339A181CD70C2000E42248 /* ReminderDetails.swift */,
 				09339A1A1CD70C6600E42248 /* NewReminder.swift */,
-				09F528BC1CD7C60100232ADB /* OneShotLocationManager.swift */,
 				09A2A4A01CC1A55D00A8F9CB /* Info.plist */,
 				09A2A4981CC1A55C00A8F9CB /* Project.xcdatamodeld */,
 				09A2A49B1CC1A55D00A8F9CB /* Assets.xcassets */,
@@ -400,7 +397,6 @@
 				09A2A4B01CC1A81D00A8F9CB /* LeftSideViewController.swift in Sources */,
 				09A2A4C01CC1A90900A8F9CB /* UIViewController+MMDrawerController.m in Sources */,
 				091DA6EE1CC9C87900314406 /* TaskList.swift in Sources */,
-				09F528BD1CD7C60100232ADB /* OneShotLocationManager.swift in Sources */,
 				09A2A4921CC1A55C00A8F9CB /* AppDelegate.swift in Sources */,
 				09F180E61CD8045400050410 /* UserDetails.swift in Sources */,
 				09A2A4C61CC1B34200A8F9CB /* MyCustomTableViewCell.swift in Sources */,
