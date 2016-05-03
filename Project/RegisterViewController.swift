@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RegisterViewController: UIViewController, UINavigationControllerDelegate  {
 
@@ -17,6 +18,10 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
     @IBOutlet weak var userRepeatPasswordTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
 
+    
+    func adduserDetails(){
+        
+    }
     
     @IBAction func registerButtonTapped(sender: AnyObject) {
         
@@ -90,6 +95,9 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
     }
     
 
+    @IBAction func iHaveAnAccount(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

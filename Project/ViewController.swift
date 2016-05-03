@@ -8,7 +8,7 @@
 
 import UIKit
 
-var toDoList = [String]()
+//var toDoList = [String]()
 
 class ViewController: UIViewController, UITableViewDelegate {
 
@@ -17,9 +17,11 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+     
         
-      
     }
+      
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -28,6 +30,14 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func viewDidAppear(animated: Bool) {
 //        tableView.reloadData()
 //        super.viewDidAppear(animated)
+        
+        let isUserLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isUserLoggedIn");
+        
+        if(!isUserLoggedIn)
+        {
+            self.performSegueWithIdentifier("loginView", sender: self);
+        }
+        
         
     }
 
