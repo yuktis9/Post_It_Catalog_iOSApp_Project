@@ -42,11 +42,25 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="mYK-xM-zga"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Add Reminder"/>
                                 <connections>
                                     <action selector="scheduleReminder:" destination="Fap-a9-P1S" eventType="touchUpInside" id="I2Z-Rz-vm1"/>
                                     <segue destination="pVZ-rL-4g4" kind="show" id="BUJ-0H-Mg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyk-x5-2th">
+                                <rect key="frame" x="20" y="280" width="560" height="78"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="cqC-OB-8bM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add Media"/>
+                                <connections>
+                                    <action selector="scheduleReminder:" destination="Fap-a9-P1S" eventType="touchUpInside" id="qCv-H8-rq3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tau-dy-cJl">
@@ -55,6 +69,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="uX4-jc-JJT"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Add Location"/>
                                 <connections>
@@ -69,7 +84,10 @@
                             <constraint firstItem="QCX-7o-Ey2" firstAttribute="centerX" secondItem="a6x-PA-kpO" secondAttribute="centerX" id="Q8n-bV-joo"/>
                             <constraint firstItem="a6x-PA-kpO" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="VY3-zc-w5k"/>
                             <constraint firstItem="QCX-7o-Ey2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="W41-R6-4Q3"/>
+                            <constraint firstItem="Wyk-x5-2th" firstAttribute="trailing" secondItem="tau-dy-cJl" secondAttribute="trailing" id="Zhv-Nt-YqA"/>
+                            <constraint firstItem="Wyk-x5-2th" firstAttribute="top" secondItem="tau-dy-cJl" secondAttribute="bottom" constant="8" symbolic="YES" id="dN0-E7-Pa9"/>
                             <constraint firstAttribute="trailing" secondItem="a6x-PA-kpO" secondAttribute="trailing" id="e03-HC-2XU"/>
+                            <constraint firstItem="Wyk-x5-2th" firstAttribute="leading" secondItem="tau-dy-cJl" secondAttribute="leading" id="f9e-ak-BvE"/>
                             <constraint firstItem="QCX-7o-Ey2" firstAttribute="height" secondItem="tau-dy-cJl" secondAttribute="height" id="hW2-49-Ccx"/>
                             <constraint firstItem="tau-dy-cJl" firstAttribute="top" secondItem="QCX-7o-Ey2" secondAttribute="bottom" constant="8" symbolic="YES" id="pXj-jX-WoI"/>
                             <constraint firstItem="tau-dy-cJl" firstAttribute="trailing" secondItem="QCX-7o-Ey2" secondAttribute="trailing" id="qUe-PG-ajZ"/>
@@ -84,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1371" y="200"/>
+            <point key="canvasLocation" x="1255" y="-62"/>
         </scene>
         <!--Left Side View Controller-->
         <scene sceneID="ZTa-bv-ggF">
@@ -99,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aqm-tS-Isa">
-                                <rect key="frame" x="0.0" y="238" width="600" height="362"/>
+                                <rect key="frame" x="0.0" y="220" width="600" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -136,11 +154,11 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKD-aB-2q8">
-                                <rect key="frame" x="205" y="64" width="114" height="48"/>
+                                <rect key="frame" x="157" y="130" width="114" height="31"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="114" id="BcD-xt-zly"/>
-                                    <constraint firstAttribute="height" constant="48" id="VG6-JJ-84U"/>
+                                    <constraint firstAttribute="height" constant="31" id="fZJ-UA-lYY"/>
+                                    <constraint firstAttribute="width" constant="114" id="omD-nz-Sr8"/>
                                 </constraints>
                                 <state key="normal" title="Upload Image"/>
                                 <connections>
@@ -148,17 +166,15 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="night_portrait_filled.png" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-yi-frJ">
-                                <rect key="frame" x="20" y="12" width="177" height="149"/>
+                                <rect key="frame" x="20" y="52" width="138" height="109"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="NDz-wX-fq9"/>
-                                    <constraint firstAttribute="height" constant="149" id="iho-NK-hNO"/>
+                                    <constraint firstAttribute="width" constant="138" id="bMM-O3-Bkr"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-4t-vJI">
-                                <rect key="frame" x="20" y="194" width="92" height="29"/>
+                                <rect key="frame" x="20" y="183" width="92" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="2lr-ra-W2e"/>
-                                    <constraint firstAttribute="width" constant="92" id="lsf-6l-6z6"/>
+                                    <constraint firstAttribute="width" constant="92" id="0Uz-ho-C2P"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,16 +183,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aqm-tS-Isa" firstAttribute="bottom" secondItem="3Ff-rG-VBZ" secondAttribute="top" id="CcF-Ql-UYs"/>
-                            <constraint firstItem="JKD-aB-2q8" firstAttribute="top" secondItem="LLH-yx-nzP" secondAttribute="bottom" constant="44" id="Dvu-pV-9uH"/>
-                            <constraint firstItem="t2g-4t-vJI" firstAttribute="top" secondItem="eM5-yi-frJ" secondAttribute="bottom" constant="33" id="Idb-zg-i2g"/>
-                            <constraint firstItem="aqm-tS-Isa" firstAttribute="leading" secondItem="IXB-oI-KAD" secondAttribute="leading" id="Ix3-25-0gM"/>
-                            <constraint firstItem="aqm-tS-Isa" firstAttribute="top" secondItem="t2g-4t-vJI" secondAttribute="bottom" constant="15" id="Suq-BU-WGF"/>
-                            <constraint firstItem="JKD-aB-2q8" firstAttribute="leading" secondItem="eM5-yi-frJ" secondAttribute="trailing" constant="8" symbolic="YES" id="bQL-6g-CDN"/>
-                            <constraint firstItem="JKD-aB-2q8" firstAttribute="leading" secondItem="IXB-oI-KAD" secondAttribute="leading" constant="205" id="eYb-Sy-Za8"/>
-                            <constraint firstItem="t2g-4t-vJI" firstAttribute="leading" secondItem="eM5-yi-frJ" secondAttribute="leading" id="k8T-bx-7DA"/>
-                            <constraint firstAttribute="trailing" secondItem="aqm-tS-Isa" secondAttribute="trailing" id="rWd-DV-5NW"/>
-                            <constraint firstItem="eM5-yi-frJ" firstAttribute="top" secondItem="IXB-oI-KAD" secondAttribute="topMargin" constant="12" id="zMY-Pf-Dyg"/>
+                            <constraint firstItem="JKD-aB-2q8" firstAttribute="leading" secondItem="IXB-oI-KAD" secondAttribute="leading" constant="157" id="0Jf-yF-Sbt"/>
+                            <constraint firstItem="aqm-tS-Isa" firstAttribute="leading" secondItem="IXB-oI-KAD" secondAttribute="leading" id="6Yn-FX-Q4m"/>
+                            <constraint firstItem="eM5-yi-frJ" firstAttribute="top" secondItem="LLH-yx-nzP" secondAttribute="bottom" constant="32" id="8OY-ZT-iHh"/>
+                            <constraint firstItem="aqm-tS-Isa" firstAttribute="bottom" secondItem="3Ff-rG-VBZ" secondAttribute="top" id="8UT-uM-nAS"/>
+                            <constraint firstItem="JKD-aB-2q8" firstAttribute="top" secondItem="LLH-yx-nzP" secondAttribute="bottom" constant="110" id="9GU-di-OLn"/>
+                            <constraint firstItem="aqm-tS-Isa" firstAttribute="top" secondItem="t2g-4t-vJI" secondAttribute="bottom" constant="8" symbolic="YES" id="IEZ-Id-fAM"/>
+                            <constraint firstItem="eM5-yi-frJ" firstAttribute="leading" secondItem="t2g-4t-vJI" secondAttribute="leading" id="Jmv-AO-hlz"/>
+                            <constraint firstItem="aqm-tS-Isa" firstAttribute="top" secondItem="JKD-aB-2q8" secondAttribute="bottom" constant="59" id="bpD-BE-vmU"/>
+                            <constraint firstItem="eM5-yi-frJ" firstAttribute="leading" secondItem="IXB-oI-KAD" secondAttribute="leadingMargin" id="edW-7b-B4G"/>
+                            <constraint firstAttribute="trailing" secondItem="aqm-tS-Isa" secondAttribute="trailing" id="h9y-w7-h8h"/>
+                            <constraint firstItem="eM5-yi-frJ" firstAttribute="bottom" secondItem="JKD-aB-2q8" secondAttribute="bottom" id="igA-Ni-06C"/>
+                            <constraint firstItem="t2g-4t-vJI" firstAttribute="top" secondItem="eM5-yi-frJ" secondAttribute="bottom" constant="22" id="rV6-ym-c5S"/>
                         </constraints>
                     </view>
                     <connections>
@@ -186,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZW-aE-ApQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="383"/>
+            <point key="canvasLocation" x="1907" y="-62"/>
         </scene>
         <!--Task View-->
         <scene sceneID="snS-UR-Xod">
@@ -276,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8li-t9-qC9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1361" y="1035"/>
+            <point key="canvasLocation" x="1245" y="1161"/>
         </scene>
         <!--Added Task-->
         <scene sceneID="2fS-sg-buL">
@@ -346,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLS-eG-OsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1975" y="1035"/>
+            <point key="canvasLocation" x="1945" y="1161"/>
         </scene>
         <!--My Reminder View Controller-->
         <scene sceneID="YdO-bL-e9k">
@@ -446,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5eX-9m-h0k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="1155"/>
+            <point key="canvasLocation" x="2610" y="1161"/>
         </scene>
         <!--New Reminder-->
         <scene sceneID="GBG-Ip-eVb">
@@ -460,23 +478,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOU-wi-TOP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="New Reminder" id="wm9-e4-boF">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7dj-Xa-1bW">
-                                            <connections>
-                                                <action selector="dismiss:" destination="9hr-Qn-v3w" id="vO2-gC-fzN"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LaR-Kj-wS1">
-                                            <connections>
-                                                <action selector="saveNewReminder:" destination="9hr-Qn-v3w" id="suC-F7-SON"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffm-Qq-TAi">
                                 <rect key="frame" x="20" y="94" width="170" height="21"/>
                                 <constraints>
@@ -507,6 +508,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOU-wi-TOP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="New Reminder" id="wm9-e4-boF">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7dj-Xa-1bW">
+                                            <connections>
+                                                <action selector="dismiss:" destination="9hr-Qn-v3w" id="vO2-gC-fzN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LaR-Kj-wS1">
+                                            <connections>
+                                                <action selector="saveNewReminder:" destination="9hr-Qn-v3w" id="suC-F7-SON"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -539,7 +557,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWh-Xk-nOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3232" y="383"/>
+            <point key="canvasLocation" x="3344" y="493"/>
         </scene>
         <!--Details-->
         <scene sceneID="7nc-O9-IRB">
@@ -644,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ji-Qn-Cgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="1051"/>
+            <point key="canvasLocation" x="586" y="1161"/>
         </scene>
         <!--Right Side View Controller-->
         <scene sceneID="TUL-1u-sX9">
@@ -675,7 +693,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUx-fQ-Hu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2568" y="383"/>
+            <point key="canvasLocation" x="2540" y="-51"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mGr-om-PDL">
@@ -693,7 +711,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaG-FM-jsY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="383"/>
+            <point key="canvasLocation" x="530" y="-385"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="3OR-Wj-QBb">
@@ -784,7 +802,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsu-fP-Wbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="383"/>
+            <point key="canvasLocation" x="-178" y="421"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="goI-Ue-Uph">
@@ -915,7 +933,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EgO-bi-z3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="1254"/>
+            <point key="canvasLocation" x="-178" y="1161"/>
         </scene>
     </scenes>
     <resources>

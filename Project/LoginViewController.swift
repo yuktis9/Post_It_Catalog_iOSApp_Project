@@ -63,6 +63,24 @@ class LoginViewController: UIViewController {
             appDelegate.window!.rootViewController = appDelegate.centerContainer
             appDelegate.window!.makeKeyAndVisible()
         }
+        
+        else
+        
+        {
+            displayMyAlertMessage("Please enter valid login details!");
+            
+            return;
+        }
+    }
+    
+    func displayMyAlertMessage(userMessage: String){
+        
+        let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil);
+        
+        myAlert.addAction(okAction)
+        
+        self.presentViewController(myAlert, animated: true, completion: nil);
     }
 
     override func viewDidLoad() {
