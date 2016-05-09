@@ -11,11 +11,18 @@ import MobileCoreServices
 
 class RecordVideoViewController: UIViewController {
 
+    @IBOutlet weak var recordVideoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        self.recordVideoButton.layer.cornerRadius = self.recordVideoButton.frame.size.width / 2;
+        self.recordVideoButton.layer.borderWidth = 3;
+        self.recordVideoButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.recordVideoButton.clipsToBounds = true;
+
     }
     
     override func didReceiveMemoryWarning() {

@@ -15,6 +15,8 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userLastNameTextField: UITextField!
     @IBOutlet weak var userFirstNameTextField: UITextField!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var userRepeatPasswordTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
 
@@ -87,12 +89,23 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate  
         scrollView.contentSize.height = 1000
         scrollView.contentSize.width = 1000
         
+        self.signInButton.layer.cornerRadius = self.signInButton.frame.size.width / 2;
+        self.signInButton.layer.borderWidth = 3;
+        self.signInButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.signInButton.clipsToBounds = true;
+        
+        self.signUpButton.layer.cornerRadius = self.signUpButton.frame.size.width / 2;
+        self.signUpButton.layer.borderWidth = 3;
+        self.signUpButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.signUpButton.clipsToBounds = true;
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     @IBAction func iHaveAnAccount(sender: AnyObject) {

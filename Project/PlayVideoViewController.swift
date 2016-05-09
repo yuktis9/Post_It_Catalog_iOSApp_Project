@@ -14,9 +14,16 @@ import MobileCoreServices
 class PlayVideoViewController: UIViewController {
 
     
+    @IBOutlet weak var playVideoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.playVideoButton.layer.cornerRadius = self.playVideoButton.frame.size.width / 2;
+        self.playVideoButton.layer.borderWidth = 3;
+        self.playVideoButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.playVideoButton.clipsToBounds = true;
     }
     
     override func didReceiveMemoryWarning() {
