@@ -63,6 +63,8 @@ class MergeMediaViewController: UIViewController {
             let outputURL = session.outputURL
             let library = ALAssetsLibrary()
             if library.videoAtPathIsCompatibleWithSavedPhotosAlbum(outputURL) {
+                //PHAssetChangeRequest
+                //creationRequestForAssetFromVideoAtFilePath
                 library.writeVideoAtPathToSavedPhotosAlbum(outputURL,
                                                            completionBlock: { (assetURL:NSURL!, error:NSError!) -> Void in
                                                             var title = ""

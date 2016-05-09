@@ -14,12 +14,39 @@ class ViewController: UIViewController, UITableViewDelegate {
 
    // var manager: OneShotLocationManager?
     
+    @IBOutlet weak var addMediaButton: UIButton!
+    @IBOutlet weak var addLocationButton: UIButton!
+    @IBOutlet weak var addReminderButton: UIButton!
+    @IBOutlet weak var addTaskButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-     
+        
+        self.addMediaButton.layer.cornerRadius = self.addMediaButton.frame.size.width / 2;
+        self.addMediaButton.layer.borderWidth = 3;
+        self.addMediaButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.addMediaButton.clipsToBounds = true;
+
+//        
+        
+        self.addLocationButton.layer.cornerRadius = self.addLocationButton.frame.size.width / 2;
+        self.addLocationButton.layer.borderWidth = 3;
+        self.addLocationButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.addLocationButton.clipsToBounds = true;
+//        
+        self.addReminderButton.layer.cornerRadius = self.addReminderButton.frame.size.width / 2;
+        self.addReminderButton.layer.borderWidth = 3;
+        self.addReminderButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.addReminderButton.clipsToBounds = true;
+//        
+        self.addTaskButton.layer.cornerRadius = self.addTaskButton.frame.size.width / 2;
+        self.addTaskButton.layer.borderWidth = 3;
+        self.addTaskButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.addTaskButton.clipsToBounds = true;
         
     }
+
       
     
     override func didReceiveMemoryWarning() {

@@ -55,6 +55,7 @@
 		09DDD98F1CE0042800F63437 /* MergeMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDD98E1CE0042800F63437 /* MergeMediaViewController.swift */; };
 		09F180E41CD7FB9300050410 /* main_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09F180E31CD7FB9300050410 /* main_background.jpg */; };
 		09F180E61CD8045400050410 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F180E51CD8045400050410 /* UserDetails.swift */; };
+		09F3F25B1CE05035001180E3 /* user_menu_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F3F25A1CE05035001180E3 /* user_menu_filled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		09DDD98E1CE0042800F63437 /* MergeMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeMediaViewController.swift; sourceTree = "<group>"; };
 		09F180E31CD7FB9300050410 /* main_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_background.jpg; sourceTree = "<group>"; };
 		09F180E51CD8045400050410 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		09F3F25A1CE05035001180E3 /* user_menu_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_menu_filled.png; sourceTree = "<group>"; };
 		09FAE6281CDFEF9400315911 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapKit.framework; sourceTree = "<group>"; };
 		09FAE62A1CDFEFAC00315911 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreLocation.framework; sourceTree = "<group>"; };
 		16B761B36C0EC3C323F59ACB /* Pods_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,16 +201,16 @@
 				09339A161CD70AAC00E42248 /* MyReminderViewController.swift */,
 				09339A181CD70C2000E42248 /* ReminderDetails.swift */,
 				09339A1A1CD70C6600E42248 /* NewReminder.swift */,
+				09DDD9881CE0003D00F63437 /* AttachMediaViewController.swift */,
+				09DDD98A1CE000B300F63437 /* PlayVideoViewController.swift */,
+				09DDD98C1CE000D300F63437 /* RecordVideoViewController.swift */,
+				09DDD98E1CE0042800F63437 /* MergeMediaViewController.swift */,
 				09A2A4A01CC1A55D00A8F9CB /* Info.plist */,
 				09A2A4981CC1A55C00A8F9CB /* Project.xcdatamodeld */,
 				09A2A49B1CC1A55D00A8F9CB /* Assets.xcassets */,
 				096F492E1CCC954500E6955B /* Realm Database */,
 				092C97581CC45BF0002B9F73 /* Bridging Files */,
 				09A2A4A61CC1A69A00A8F9CB /* Images */,
-				09DDD9881CE0003D00F63437 /* AttachMediaViewController.swift */,
-				09DDD98A1CE000B300F63437 /* PlayVideoViewController.swift */,
-				09DDD98C1CE000D300F63437 /* RecordVideoViewController.swift */,
-				09DDD98E1CE0042800F63437 /* MergeMediaViewController.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -216,6 +218,7 @@
 		09A2A4A61CC1A69A00A8F9CB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09F3F25A1CE05035001180E3 /* user_menu_filled.png */,
 				09F180E31CD7FB9300050410 /* main_background.jpg */,
 				092AC2AA1CCEEA0400BACF74 /* depositphotos_16210777-arrow-up-orange-glossy-circle-icon-on-white-background.jpg */,
 				092C067C1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg */,
@@ -332,6 +335,7 @@
 				09A2A4AA1CC1A6C200A8F9CB /* menu_filled.png in Resources */,
 				09A2A4AE1CC1A6EE00A8F9CB /* left_filled.png in Resources */,
 				0903DFC81CC319890026BB8A /* sticky-note-using-html5-web-storage.jpg in Resources */,
+				09F3F25B1CE05035001180E3 /* user_menu_filled.png in Resources */,
 				092C067F1CCD364B00DB2EB6 /* ryX6nNE.jpg in Resources */,
 				092C97641CC49A6D002B9F73 /* color_dropper.png in Resources */,
 				092C067D1CCD363100DB2EB6 /* Hawaii-Beach-Wallpaper-HD.jpg in Resources */,

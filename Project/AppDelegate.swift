@@ -60,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         }
         
-        return true
+                return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

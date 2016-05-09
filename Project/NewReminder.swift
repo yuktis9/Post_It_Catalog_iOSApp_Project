@@ -43,6 +43,11 @@ class NewReminder: UIViewController {
             do {
                 try self.eventStore.saveReminder(reminder, commit: true)
                 dismissViewControllerAnimated(true, completion: nil)
+                
+                NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(AboutViewController.drawAShape(_:)), name: "actionOnePressed", object: nil)
+                NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(AboutViewController.showAMessage(_:)), name: "actionTwoPressed", object: nil)
+             
+
             }catch{
                 print("Error creating and saving new reminder : \(error)")
             }

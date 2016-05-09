@@ -18,7 +18,29 @@ class AboutViewController: UIViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+               
+        
     }
+    
+    
+    func drawAShape(notification:NSNotification){
+        let view:UIView = UIView(frame:CGRectMake(10, 10, 100, 100))
+        view.backgroundColor = UIColor.redColor()
+        
+        self.view.addSubview(view)
+        
+    }
+    
+    func showAMessage(notification:NSNotification){
+        let message:UIAlertController = UIAlertController(title: "A Notification Message", message: "Hello there", preferredStyle: UIAlertControllerStyle.Alert)
+        message.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(message, animated: true, completion: nil)
+        
+    }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

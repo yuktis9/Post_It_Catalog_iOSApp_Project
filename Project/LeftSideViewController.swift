@@ -135,7 +135,22 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // For circular profile picture
+        
+        self.myImageView.layer.cornerRadius = self.myImageView.frame.size.width / 2;
+        self.myImageView.layer.borderWidth = 3;
+        self.myImageView.layer.borderColor = UIColor.blackColor().CGColor;
+        self.myImageView.clipsToBounds = true;
+    
+        
         // Do any additional setup after loading the view.
+        
+        self.uploadButton.layer.cornerRadius = self.uploadButton.frame.size.width / 2;
+        self.uploadButton.layer.borderWidth = 3;
+        self.uploadButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.uploadButton.clipsToBounds = true;
+        
+
   
     }
     
