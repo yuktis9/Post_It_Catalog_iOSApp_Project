@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
             
             let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController
             
-            let rightViewController = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController
+            let rightViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AttachMediaViewController") as! AttachMediaViewController
             
             let leftSideNav = UINavigationController(rootViewController: leftViewController)
             let centerNav = UINavigationController(rootViewController: centerViewController)
@@ -85,7 +85,12 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        
         
+        
+//        CGRect frameRect = userEmailTextField.frame;
+//        frameRect.size.height = 100; // <-- Specify the height you want here.
+//        textField.frame = frameRect;
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         

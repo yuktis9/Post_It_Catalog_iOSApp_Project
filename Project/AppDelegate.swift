@@ -39,7 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideViewController") as! LeftSideViewController
         
-        let rightViewController = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as! RightSideViewController
+        let rightViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AttachMediaViewController") as! AttachMediaViewController
+            
             
        // let aboutViewController = mainStoryboard.instantiateViewControllerWithIdentifier("AboutViewController") as! AboutViewController
         
