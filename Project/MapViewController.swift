@@ -45,4 +45,36 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         print("Errors: ",  error.localizedDescription)
         
     }
+    
+    
+    // MARK: - Taking screen shot of the location
+    
+    @IBAction func screenShotButtonPressed(sender: AnyObject) {
+        
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let sourceImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(sourceImage, nil, nil, nil)
+        
+        UIGraphicsBeginImageContext(view.frame.size)
+        sourceImage.drawAtPoint(CGPointMake(-25, -100))
+        let croppedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        UIImageWriteToSavedPhotosAlbum(croppedImage, nil, nil, nil)
+
+        displayMyAlertMessage("Your screen shot has been saved to device library");
+     
+}
+
+func displayMyAlertMessage(userMessage: String){
+    
+    let myAlert = UIAlertController(title: "Success", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert);
+    let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil);
+    
+    myAlert.addAction(okAction)
+    
+    self.presentViewController(myAlert, animated: true, completion: nil);
+}
+
 }

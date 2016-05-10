@@ -8,6 +8,18 @@
 
 import UIKit
 
+func getDocumentsURL() -> NSURL {
+    let documentsURL = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+    return documentsURL
+}
+
+func fileInDocumentsDirectory(filename: String) -> String {
+    
+    let fileURL = getDocumentsURL().URLByAppendingPathComponent(filename)
+    return fileURL.path!
+    
+}
+
 class LeftSideViewController: UIViewController,UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
     @IBOutlet weak var uploadButton: UIButton!
@@ -18,6 +30,36 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
   //  @IBOutlet weak var scrollView: UIScrollView!
     
     var menuItems:[String] = ["Main","About", "Logout"];
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // For circular profile picture
+        
+//        self.myImageView.layer.cornerRadius = self.myImageView.frame.size.width / 2;
+//        self.myImageView.layer.borderWidth = 3;
+//        self.myImageView.layer.borderColor = UIColor.blackColor().CGColor;
+//        self.myImageView.clipsToBounds = true;
+        
+        
+        // Do any additional setup after loading the view.
+        
+        self.uploadButton.layer.cornerRadius = self.uploadButton.frame.size.width / 2;
+        self.uploadButton.layer.borderWidth = 3;
+        self.uploadButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.uploadButton.clipsToBounds = true;
+        
+        // Define the specific path, image name
+        let myImageName = "image.png"
+        let imagePath = fileInDocumentsDirectory(myImageName)
+        
+        if let loadedImage = loadImageFromPath(imagePath) {
+            print(" Loaded Image: \(loadedImage)")
+            myImageView.image = loadedImage
+        } else { print("some error message 2") }
+        
+    }
     
     @IBAction func uploadButtonTapped(sender: AnyObject) {
         
@@ -34,6 +76,41 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
         print("image selected from the lib")
         self.dismissViewControllerAnimated(true, completion: nil)
         myImageView.image = image
+        
+        // Define the specific path, image name
+        let myImageName = "image.png"
+        let imagePath = fileInDocumentsDirectory(myImageName)
+        
+        if let image = myImageView.image {
+            saveImage(image, path: imagePath)
+        } else { print("some error message") }
+        
+        if let loadedImage = loadImageFromPath(imagePath) {
+            print(" Loaded Image: \(loadedImage)")
+        } else { print("some error message 2") }
+    }
+    
+    func saveImage (image: UIImage, path: String ) -> Bool{
+        
+        let pngImageData = UIImagePNGRepresentation(image)
+        //let jpgImageData = UIImageJPEGRepresentation(image, 1.0)   // if you want to save as JPEG
+        let result = pngImageData!.writeToFile(path, atomically: true)
+        
+        return result
+        
+    }
+    
+    func loadImageFromPath(path: String) -> UIImage? {
+        
+        let image = UIImage(contentsOfFile: path)
+        
+        if image == nil {
+            
+            print("missing image at: \(path)")
+        }
+        print("Loading image from path: \(path)") // this is just for you to see the path in case you want to go to the directory, using Finder.
+        return image
+        
     }
     
    
@@ -131,28 +208,7 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
         }
         
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // For circular profile picture
-        
-        self.myImageView.layer.cornerRadius = self.myImageView.frame.size.width / 2;
-        self.myImageView.layer.borderWidth = 3;
-        self.myImageView.layer.borderColor = UIColor.blackColor().CGColor;
-        self.myImageView.clipsToBounds = true;
-    
-        
-        // Do any additional setup after loading the view.
-        
-        self.uploadButton.layer.cornerRadius = self.uploadButton.frame.size.width / 2;
-        self.uploadButton.layer.borderWidth = 3;
-        self.uploadButton.layer.borderColor = UIColor.blackColor().CGColor;
-        self.uploadButton.clipsToBounds = true;
-        
 
-  
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
