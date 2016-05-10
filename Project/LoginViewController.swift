@@ -15,7 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
+    @IBOutlet weak var signInButton: UIButton!
       // MARK: - Table view data source
+    @IBOutlet weak var signUpButton: UIButton!
 
     @IBAction func loginButtonTapped(sender: AnyObject) {
         
@@ -85,6 +87,17 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.signInButton.layer.cornerRadius = self.signInButton.frame.size.width / 2;
+        self.signInButton.layer.borderWidth = 3;
+        self.signInButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.signInButton.clipsToBounds = true;
+        
+        self.signUpButton.layer.cornerRadius = self.signUpButton.frame.size.width / 2;
+        self.signUpButton.layer.borderWidth = 3;
+        self.signUpButton.layer.borderColor = UIColor.blackColor().CGColor;
+        self.signUpButton.clipsToBounds = true;
+
 //        
         
         
