@@ -182,6 +182,11 @@ class TaskListsViewController: UIViewController, UITableViewDelegate{
         let tasksViewController = segue.destinationViewController as! TasksViewController
         tasksViewController.selectedList = sender as! TaskList
     }
+    
+//    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+//        cell.selectionStyle = .None
+//    }
+
     /*
      // MARK: - Navigation
      

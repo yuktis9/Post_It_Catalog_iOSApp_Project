@@ -109,7 +109,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let createAction = UIAlertAction(title: doneTitle, style: UIAlertActionStyle.Default) { (action) -> Void in
             
             let taskName = alertController.textFields?.first?.text
-            
+          
             if updatedTask != nil{
                 // update mode
                try! uiRealm.write({ () -> Void in

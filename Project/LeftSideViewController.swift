@@ -51,13 +51,13 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
         self.uploadButton.clipsToBounds = true;
         
         // Define the specific path, image name
-        let myImageName = "image.png"
-        let imagePath = fileInDocumentsDirectory(myImageName)
-        
-        if let loadedImage = loadImageFromPath(imagePath) {
-            print(" Loaded Image: \(loadedImage)")
-            myImageView.image = loadedImage
-        } else { print("some error message 2") }
+//        let myImageName = "image.png"
+//        let imagePath = fileInDocumentsDirectory(myImageName)
+//        
+//        if let loadedImage = loadImageFromPath(imagePath) {
+//            print(" Loaded Image: \(loadedImage)")
+//            myImageView.image = loadedImage
+//        } else { print("some error message 2") }
         
     }
     
@@ -103,6 +103,7 @@ class LeftSideViewController: UIViewController,UITableViewDataSource, UITableVie
     func loadImageFromPath(path: String) -> UIImage? {
         
         let image = UIImage(contentsOfFile: path)
+    
         
         if image == nil {
             

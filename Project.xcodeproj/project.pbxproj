@@ -29,10 +29,9 @@
 		09339A1B1CD70C6600E42248 /* NewReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09339A1A1CD70C6600E42248 /* NewReminder.swift */; };
 		0980F26E1CE1102300140127 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0980F26D1CE1102300140127 /* MapViewController.swift */; };
 		0980F2701CE119C900140127 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980F26F1CE119C900140127 /* contacts.png */; };
-		0980F2721CE119D700140127 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980F2711CE119D700140127 /* key.png */; };
+		0980F2721CE119D700140127 /* screenshot_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980F2711CE119D700140127 /* screenshot_filled.png */; };
 		0980F2741CE119E400140127 /* name.png in Resources */ = {isa = PBXBuildFile; fileRef = 0980F2731CE119E400140127 /* name.png */; };
 		099DDDEB1CC6E4160068D79C /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 099DDDEA1CC6E4160068D79C /* forward.png */; };
-		09A0A2D81CE2773900F7A1B3 /* screenshot_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 09A0A2D71CE2773900F7A1B3 /* screenshot_filled.png */; };
 		09A2A4921CC1A55C00A8F9CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4911CC1A55C00A8F9CB /* AppDelegate.swift */; };
 		09A2A4941CC1A55C00A8F9CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2A4931CC1A55C00A8F9CB /* ViewController.swift */; };
 		09A2A4971CC1A55C00A8F9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A2A4951CC1A55C00A8F9CB /* Main.storyboard */; };
@@ -86,11 +85,10 @@
 		09339A1A1CD70C6600E42248 /* NewReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewReminder.swift; sourceTree = "<group>"; };
 		0980F26D1CE1102300140127 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0980F26F1CE119C900140127 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
-		0980F2711CE119D700140127 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		0980F2711CE119D700140127 /* screenshot_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot_filled.png; sourceTree = "<group>"; };
 		0980F2731CE119E400140127 /* name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name.png; sourceTree = "<group>"; };
 		099DDDEA1CC6E4160068D79C /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
 		09A0A2D51CE26FE800F7A1B3 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		09A0A2D71CE2773900F7A1B3 /* screenshot_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenshot_filled.png; path = ../../../../../var/folders/vq/pl0xss8n7170lnc8d5r6ln8h0000gn/T/iOS7/SVG/Editing/screenshot_filled.png; sourceTree = "<group>"; };
 		09A2A48E1CC1A55C00A8F9CB /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09A2A4911CC1A55C00A8F9CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09A2A4931CC1A55C00A8F9CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,9 +228,8 @@
 		09A2A4A61CC1A69A00A8F9CB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				09A0A2D71CE2773900F7A1B3 /* screenshot_filled.png */,
 				0980F2731CE119E400140127 /* name.png */,
-				0980F2711CE119D700140127 /* key.png */,
+				0980F2711CE119D700140127 /* screenshot_filled.png */,
 				0980F26F1CE119C900140127 /* contacts.png */,
 				09F3F25A1CE05035001180E3 /* user_menu_filled.png */,
 				09F180E31CD7FB9300050410 /* main_background.jpg */,
@@ -344,7 +341,7 @@
 				09A2A49F1CC1A55D00A8F9CB /* LaunchScreen.storyboard in Resources */,
 				091DA6F01CC9CEAE00314406 /* plus.png in Resources */,
 				09A2A4C41CC1B27500A8F9CB /* night_portrait_filled.png in Resources */,
-				0980F2721CE119D700140127 /* key.png in Resources */,
+				0980F2721CE119D700140127 /* screenshot_filled.png in Resources */,
 				09A2A4A81CC1A6B300A8F9CB /* ok_filled.png in Resources */,
 				099DDDEB1CC6E4160068D79C /* forward.png in Resources */,
 				09F180E41CD7FB9300050410 /* main_background.jpg in Resources */,
@@ -354,7 +351,6 @@
 				09A2A4AA1CC1A6C200A8F9CB /* menu_filled.png in Resources */,
 				0980F2741CE119E400140127 /* name.png in Resources */,
 				09A2A4AE1CC1A6EE00A8F9CB /* left_filled.png in Resources */,
-				09A0A2D81CE2773900F7A1B3 /* screenshot_filled.png in Resources */,
 				0903DFC81CC319890026BB8A /* sticky-note-using-html5-web-storage.jpg in Resources */,
 				09F3F25B1CE05035001180E3 /* user_menu_filled.png in Resources */,
 				092C067F1CCD364B00DB2EB6 /* ryX6nNE.jpg in Resources */,

@@ -625,19 +625,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="139" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="feF-jv-bhC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="52" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="feF-jv-bhC">
                                 <rect key="frame" x="0.0" y="64" width="600" height="535"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="cell" textLabel="fPl-4S-VbW" rowHeight="139" style="IBUITableViewCellStyleDefault" id="6sb-Lm-fqg">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="139"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="10" reuseIdentifier="cell" textLabel="fPl-4S-VbW" rowHeight="52" style="IBUITableViewCellStyleDefault" id="6sb-Lm-fqg">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6sb-Lm-fqg" id="MHS-v5-o6f">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="138"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fPl-4S-VbW">
-                                                    <rect key="frame" x="15" y="0.0" width="570" height="138"/>
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1012,17 +1012,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rx-jo-n8j">
-                                <rect key="frame" x="274" y="289" width="47" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05u-La-gjY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="voq-51-0dB">
+                                        <rect key="frame" x="18" y="22" width="563" height="555"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Post - It Catalog: Every electronic device comprises a task manager for the users to follow up with their daily routine. In this project, we aim to design a fancy and comparatively more interactive task manager which is flexible and customizable with a list-based user interface built on Swift. Apart from adding the common functionalities of sorting, editing and adding a new item, we can also attach audio, video, image and even location to our task reminder. To make it even more user friendly, customizable settings are also provided. We are also directing the application to move the completed tasks automatically to the list of closed task.</string>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="voq-51-0dB" secondAttribute="trailing" constant="19" id="JDW-nC-3GJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="voq-51-0dB" secondAttribute="bottom" constant="23" id="YNY-Ru-SDX"/>
+                                    <constraint firstItem="voq-51-0dB" firstAttribute="leading" secondItem="05u-La-gjY" secondAttribute="leading" constant="18" id="iGu-IX-S1F"/>
+                                    <constraint firstItem="voq-51-0dB" firstAttribute="top" secondItem="05u-La-gjY" secondAttribute="top" constant="22" id="krH-Mv-xyU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1Rx-jo-n8j" firstAttribute="leading" secondItem="JHD-VN-dAl" secondAttribute="leading" constant="274" id="f7Z-wx-age"/>
-                            <constraint firstItem="1Rx-jo-n8j" firstAttribute="centerY" secondItem="JHD-VN-dAl" secondAttribute="centerY" id="ge1-Ge-gwz"/>
+                            <constraint firstItem="05u-La-gjY" firstAttribute="leading" secondItem="JHD-VN-dAl" secondAttribute="leading" id="C3p-4D-CiR"/>
+                            <constraint firstItem="zVB-QI-yc2" firstAttribute="top" secondItem="05u-La-gjY" secondAttribute="bottom" id="hMx-2A-hVx"/>
+                            <constraint firstAttribute="trailing" secondItem="05u-La-gjY" secondAttribute="trailing" id="jI4-fh-kj9"/>
+                            <constraint firstItem="05u-La-gjY" firstAttribute="top" secondItem="JHD-VN-dAl" secondAttribute="top" id="tFd-6O-QOl"/>
                         </constraints>
                     </view>
                 </viewController>
